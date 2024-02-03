@@ -6,15 +6,29 @@ const config: Config = {
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  daisyui: {
+    themes: ["dark"],
+    styled: false,
+  },
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      colors: {
+        laranja: {
+          DEFAULT: "#d95000",
+          hover: "#c04600",
+        },
       },
     },
+    fontFamily: {
+      heading: ["var(--font-gotham)"],
+      body: ["var(--font-poppins)"],
+      category: ["var(--font-bebas)"],
+    },
+    fontWeight: {
+      normal: "400",
+      bold: "700",
+    },
   },
-  plugins: [],
+  plugins: [require("daisyui")],
 };
 export default config;

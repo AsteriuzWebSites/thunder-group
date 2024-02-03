@@ -1,0 +1,12 @@
+#raio-logo-nav {
+  fill: white;
+  transition-property: color, background-color, border-color,
+    text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+}
+
+/* hover logo-nav change color of raio-logo-nav */
+#logo-nav:hover #raio-logo-nav {
+  fill: #d95000;
+}
