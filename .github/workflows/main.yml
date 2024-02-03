@@ -12,18 +12,18 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
       - name: Install Packages
-        uses: pnpm/action-setup@v2
+        uses: npm/action-setup@v2
         with:
           version: 8
           run_install: true
       - name: Set Environment Variables
         env:
-          BASE_PATH: /react-texteditor-example
+          BASE_PATH: /thunder-group
         run: |
           echo "" > .env.local
           echo BASE_PATH=$BASE_PATH >> .env.local
       - name: Build
-        run: pnpm run build
+        run: npm run build
       - name: Create .nojekyll
         run: touch ./out/.nojekyll
       - name: Deploy
