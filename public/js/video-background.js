@@ -62,19 +62,19 @@
     if (!/^\s*\[.*\]\s*$/.test(str)) return;
     try {
       return JSON.parse(str);
-    } catch (e) {}
+    } catch (e) { }
   }
   function stringToObject(str) {
     if (!/^\s*\{.*\}\s*$/.test(str)) return;
     try {
       return JSON.parse(str);
-    } catch (e) {}
+    } catch (e) { }
   }
   function stringToRegex(str) {
     if (!/^\s*\/.*\/g?i?\s*$/.test(str)) return;
     try {
       return new RegExp(str);
-    } catch (e) {}
+    } catch (e) { }
   }
   function stringToType(str) {
     if (/^\s*null\s*$/.test(str)) return null;
@@ -1142,12 +1142,12 @@
               try {
                 if (self.index[uid].player && !self.index[uid].paused)
                   self.index[uid].softPlay();
-              } catch (e) {}
+              } catch (e) { }
             } else {
               self.index[uid].isIntersecting = false;
               try {
                 if (self.index[uid].player) self.index[uid].softPause();
-              } catch (e) {}
+              } catch (e) { }
             }
           });
         });

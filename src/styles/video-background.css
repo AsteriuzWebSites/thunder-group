@@ -23,7 +23,7 @@ iframe {
   .video-background {
     max-height: 650px !important;
   }
-  iframe {
+  #video-background > iframe {
     transform: translate(-45%, -50%) !important;
     max-height: 650px !important;
   }

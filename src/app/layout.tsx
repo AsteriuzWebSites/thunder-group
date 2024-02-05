@@ -47,12 +47,13 @@ export default function RootLayout({
         <Header />
         {children}
       </body>
+      <Script src="js/nav.js"></Script>
       <Script
         strategy="lazyOnload"
         type="module"
         src="js/video-background.js"
       ></Script>
-      <Script src="js/nav.js"></Script>
+      <Script src="js/util.js" defer></Script>
     </html>
   );
 }

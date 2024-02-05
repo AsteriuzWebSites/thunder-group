@@ -1,75 +1,110 @@
 import { FaWhatsapp } from "react-icons/fa";
 import Logo from "@/assets/logo/Logo";
 import "@/styles/header.css";
+import { HiMiniBars3CenterLeft, HiMiniXMark } from "react-icons/hi2";
 
 export default function Header() {
   return (
-    <nav className="flex w-full justify-center text-white">
-      <div className="navbar fixed z-50 w-full max-w-screen-xl border-[#ffffff75] py-6 sm:border-b">
+    <nav
+      id="nav"
+      className="fixed z-40 flex w-full justify-center text-white  duration-500 ease-in-out"
+    >
+      <div className="navbar w-full max-w-screen-xl border-[#ffffff75] py-6  sm:border-b">
         <div className="navbar-start justify-between sm:justify-normal">
-          <div className="dropdown">
-            <div tabIndex={0} role="button" className="btn-ghost btn lg:hidden">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-8 w-8"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
+          <div className="drawer  z-[60] lg:hidden">
+            <input id="drawer-nav" type="checkbox" className="drawer-toggle" />
+            <div className="drawer-content z-[70]">
+              <label
+                htmlFor="drawer-nav"
+                className="btn-ghost btn z-[70] hover:bg-transparent"
               >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M4 6h16M4 12h8m-8 6h16"
+                {/* <HiOutlineBars3CenterLeft className="h-8 w-8" /> */}
+                <HiMiniBars3CenterLeft
+                  id="drawer-open-icon"
+                  className="h-8 w-8"
                 />
-              </svg>
+
+                <HiMiniXMark
+                  id="drawer-close-icon"
+                  className="hidden h-8 w-8 scale-125"
+                />
+              </label>
             </div>
-            <ul
-              tabIndex={0}
-              className="dropdown-content menu menu-sm z-[1] mt-[33px] rounded-b-md p-2 backdrop-blur transition-all duration-300"
-            >
-              <li>
-                <a className="cursor-pointer rounded-none px-6 py-3 transition-all duration-300 hover:bg-none ">
-                  HOME
-                </a>
-              </li>
-              <li>
-                <a className="cursor-pointer rounded-none px-6 py-3 transition-all duration-300 hover:bg-none ">
-                  PORTFOLIO
-                </a>
-              </li>
-              <li>
-                <a className="cursor-pointer rounded-none px-6 py-3 transition-all duration-300 hover:bg-none ">
-                  CONTATO
-                </a>
-              </li>
-            </ul>
+            <div className="drawer-side">
+              <label
+                htmlFor="drawer-nav"
+                aria-label="close sidebar"
+                className="drawer-overlay"
+              ></label>
+              <ul className="menu menu-lg min-h-full w-80 max-w-full bg-black p-4 text-white ">
+                {/* <div className="mb-8 mt-4 flex w-full justify-between">
+                  <Logo
+                    id="logo-nav"
+                    className=" h-16 w-16 shrink-0  cursor-pointer"
+                  />
+                  <button className="btn btn-square bg-laranja text-white hover:bg-laranja-hover">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="h-6 w-6"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        d="M6 18L18 6M6 6l12 12"
+                      />
+                    </svg>
+                  </button>
+                </div> */}
+                <li className="mt-24 hover:bg-transparent">
+                  <a className="drawer-button cursor-pointer px-6 py-3">HOME</a>
+                </li>
+                <li>
+                  <a className="drawer-button cursor-pointer px-6 py-3">
+                    PORTFOLIO
+                  </a>
+                </li>
+                <li>
+                  <a className="drawer-button cursor-pointer px-6 py-3">
+                    CONTATO
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
-          <Logo
-            id="logo-nav"
-            className=" ml-8 h-16 w-16 shrink-0 translate-x-1/2 cursor-pointer"
-          />
+          <a href="/">
+            <Logo
+              id="logo-nav"
+              className=" ml-8 h-16 w-16 shrink-0 translate-x-1/2 cursor-pointer"
+            />
+          </a>
         </div>
         <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal flex px-1 text-base font-bold tracking-wider">
+          <ul className="flex px-1 text-base font-bold tracking-wider">
             <li>
-              <a className="cursor-pointer rounded-none px-6 py-3 transition-all duration-300 hover:bg-none hover:shadow-[0_3px_tomato]">
+              <a
+                href="/"
+                className="hover:shadow-underline cursor-pointer rounded-none px-6 py-3 transition-all duration-300 hover:bg-transparent hover:bg-none"
+              >
                 HOME
               </a>
             </li>
             <li>
-              <a className="cursor-pointer rounded-none px-6 py-3 transition-all duration-300 hover:bg-none hover:shadow-[0_3px_tomato]">
+              <a className="hover:shadow-underline cursor-pointer rounded-none px-6 py-3 transition-all duration-300 hover:bg-transparent hover:bg-none">
                 PORTFOLIO
               </a>
             </li>
             <li>
-              <a className="cursor-pointer rounded-none px-6 py-3 transition-all duration-300 hover:bg-none hover:shadow-[0_3px_tomato]">
+              <a className="hover:shadow-underline cursor-pointer rounded-none px-6 py-3 transition-all duration-300 hover:bg-transparent hover:bg-none">
                 CONTATO
               </a>
             </li>
           </ul>
         </div>
-        <div className="navbar-end hidden sm:flex">
+        <div className="navbar-end z-50 hidden sm:flex">
           <a
             aria-label="Fale Conosco"
             href="https://wa.me/5511970319836"

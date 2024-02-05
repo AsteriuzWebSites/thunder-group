@@ -1,5 +1,7 @@
 import type { Config } from "tailwindcss";
 
+import defaultTheme from "tailwindcss/defaultTheme";
+
 const config: Config = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -8,15 +10,28 @@ const config: Config = {
   ],
   daisyui: {
     themes: ["dark"],
-    styled: false,
+    styled: true,
   },
   theme: {
+    screens: {
+      xs: "375px",
+      ...defaultTheme.screens,
+    },
     extend: {
+      boxShadow: {
+        underline: "0 3px tomato",
+      },
       colors: {
         laranja: {
           DEFAULT: "#d95000",
           hover: "#c04600",
         },
+        semiwhite: {
+          DEFAULT: "#ffffff75",
+        },
+      },
+      screens: {
+        tall: { raw: "(min-height: 800px)" },
       },
     },
     fontFamily: {
