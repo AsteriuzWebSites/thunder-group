@@ -7,16 +7,19 @@ export default function Header() {
   return (
     <nav
       id="nav"
-      className="fixed z-40 flex w-full justify-center text-white  duration-500 ease-in-out"
+      className="fixed z-40 flex w-full justify-center text-white backdrop-blur-md transition-all duration-500 ease-in-out"
     >
-      <div className="navbar w-full max-w-screen-xl border-[#ffffff75] py-6  sm:border-b">
+      <div
+        id="nav-inner"
+        className="navbar w-full max-w-screen-xl transition-all duration-300 border-[#ffffff75] py-6  sm:border-b"
+      >
         <div className="navbar-start justify-between sm:justify-normal">
           <div className="drawer  z-[60] lg:hidden">
             <input id="drawer-nav" type="checkbox" className="drawer-toggle" />
             <div className="drawer-content z-[70]">
               <label
                 htmlFor="drawer-nav"
-                className="btn-ghost btn z-[70] hover:bg-transparent"
+                className="btn btn-ghost z-[70] hover:bg-transparent"
               >
                 {/* <HiOutlineBars3CenterLeft className="h-8 w-8" /> */}
                 <HiMiniBars3CenterLeft
@@ -87,18 +90,18 @@ export default function Header() {
             <li>
               <a
                 href="/"
-                className="hover:shadow-underline cursor-pointer rounded-none px-6 py-3 transition-all duration-300 hover:bg-transparent hover:bg-none"
+                className="cursor-pointer rounded-none px-6 py-3 transition-all duration-300 hover:bg-transparent hover:bg-none hover:shadow-underline"
               >
                 HOME
               </a>
             </li>
             <li>
-              <a className="hover:shadow-underline cursor-pointer rounded-none px-6 py-3 transition-all duration-300 hover:bg-transparent hover:bg-none">
+              <a className="cursor-pointer rounded-none px-6 py-3 transition-all duration-300 hover:bg-transparent hover:bg-none hover:shadow-underline">
                 PORTFOLIO
               </a>
             </li>
             <li>
-              <a className="hover:shadow-underline cursor-pointer rounded-none px-6 py-3 transition-all duration-300 hover:bg-transparent hover:bg-none">
+              <a className="cursor-pointer rounded-none px-6 py-3 transition-all duration-300 hover:bg-transparent hover:bg-none hover:shadow-underline">
                 CONTATO
               </a>
             </li>

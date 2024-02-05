@@ -1,5 +1,6 @@
 let drawerToggle = document.getElementById("drawer-nav");
 let nav = document.getElementById("nav");
+let navInner = document.getElementById("nav-inner");
 let prevScrollpos = window.scrollY;
 
 /* -------------------------------------------------------------------------- */
@@ -14,6 +15,16 @@ window.onscroll = function () {
     nav.style.transform = "translateY(-100%)";
   }
   prevScrollpos = currentScrollPos;
+
+  if (currentScrollPos > 48) {
+    // padding 12px height
+    nav.classList.add("backdrop-blur-md");
+    navInner.style.padding = "12px 8px";
+  }
+  else {
+    nav.classList.remove("backdrop-blur-md");
+    navInner.style.padding = "24px 8px";
+  }
 };
 
 /* -------------------------------------------------------------------------- */

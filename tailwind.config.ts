@@ -12,6 +12,7 @@ const config: Config = {
     themes: ["dark"],
     styled: true,
   },
+  safelist: ["backdrop-blur-md"],
   theme: {
     screens: {
       xs: "375px",

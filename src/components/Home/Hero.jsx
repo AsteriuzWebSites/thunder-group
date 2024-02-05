@@ -12,7 +12,7 @@ export default function Hero() {
           <h2 className="font-heading text-sm font-normal md:text-base">
             O ESTÚDIO DE EDIÇÃO DE VÍDEO PARA
           </h2>
-          <ul className="xs:text-base my-5 flex flex-wrap gap-5 font-category text-sm">
+          <ul className="my-5 flex flex-wrap gap-5 font-category text-sm xs:text-base">
             <li>
               <ul className="flex gap-5">
                 <li className="rounded-lg px-3 py-2 outline outline-1 outline-semiwhite transition-transform duration-300 hover:scale-105 md:text-base">
@@ -34,7 +34,7 @@ export default function Hero() {
               </ul>
             </li>
           </ul>
-          <h1 className="xs:text-3xl font-heading text-2xl font-bold leading-snug tracking-tight sm:text-4xl md:text-[63px] md:leading-none">
+          <h1 className="font-heading text-2xl font-bold leading-snug tracking-tight xs:text-3xl sm:text-4xl md:text-[63px] md:leading-none">
             DESBLOQUEAR TODO O POTENCIAL DA SUA MARCA
           </h1>
           <div className="relative mt-8 grid w-4/5 grid-rows-2 gap-y-3 sm:w-3/5 md:w-1/2 lg:h-3 lg:grid-cols-2 lg:grid-rows-none">

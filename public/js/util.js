@@ -46,12 +46,7 @@ trailerButton.addEventListener('click', function () {
 
 document.addEventListener('click', function (e) {
   if (e.target.id === "trailer-modal") {
+    trailerPlayer.pauseVideo();
     trailerModal.close();
-    try {
-      trailerPlayer.pauseVideo();
-    }
-    catch (e) {
-      console.log(e);
-    }
   }
 });
