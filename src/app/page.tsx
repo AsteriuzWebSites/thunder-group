@@ -1,4 +1,3 @@
-import Image from "next/image";
 import "@/styles/video-background.css";
 import Hero from "@/components/Home/Hero";
 import About from "@/components/Home/About";

@@ -11,21 +11,39 @@ export default function About() {
           NOSSOS PARCEIROS DE CONFIANÇA
         </h4>
         <div className="flex w-full max-w-[450px] flex-wrap items-center justify-center gap-x-20">
-          <img
+          {/* <img
             src={BoticarioLogo.src}
             alt="Boticario"
             className="w-1/4 py-6 brightness-0 invert transition-transform duration-500 hover:scale-110 sm:py-8 tall:w-1/3"
+          /> */}
+          {/* change to <Image */}
+          <Image
+            src={"/thunder-group/" + BoticarioLogo.src}
+            alt="Boticario"
+            className="w-1/4 py-6 brightness-0 invert transition-transform duration-500 hover:scale-110 sm:py-8 tall:w-1/3"
           />
-          <img
+          {/* <img
             src={MelissaLogo.src}
             alt="Melissa"
             className="w-1/4 py-6 brightness-0 invert transition-transform duration-500 hover:scale-110 tall:w-1/3"
+          /> */}
+          {/* change to <Image */}
+          <Image
+            src={MelissaLogo}
+            alt="Melissa"
+            className="w-1/4 py-6 brightness-0 invert transition-transform duration-500 hover:scale-110 tall:w-1/3"
           />
-          <img
+
+          {/* <img
             src={DaisoLogo.src}
             alt="Daiso"
             className="w-1/4 py-6 brightness-0 invert transition-transform duration-500 hover:scale-110 tall:w-1/3"
             height={40}
+          /> */}
+          <Image
+            src={DaisoLogo}
+            alt="Daiso"
+            className="w-1/4 py-6 brightness-0 invert transition-transform duration-500 hover:scale-110 tall:w-1/3"
           />
         </div>
       </div>
