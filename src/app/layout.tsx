@@ -5,6 +5,7 @@ import Script from "next/script";
 import Header from "@/components/Header/Header";
 import localFont from "next/font/local";
 import "@/styles/animation.css";
+import Footer from "@/components/Footer/Footer";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -46,14 +47,15 @@ export default function RootLayout({
       >
         <Header />
         {children}
+        <Footer />
       </body>
-      <Script src="js/nav.js"></Script>
+      <Script src="thunder-group/js/nav.js"></Script>
       <Script
         strategy="lazyOnload"
         type="module"
-        src="js/video-background.js"
+        src="thunder-group/js/video-background.js"
       ></Script>
-      <Script src="js/util.js" defer></Script>
+      <Script src="thunder-group/js/util.js" defer></Script>
     </html>
   );
 }

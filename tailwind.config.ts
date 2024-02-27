@@ -12,7 +12,20 @@ const config: Config = {
     themes: ["dark"],
     styled: true,
   },
-  safelist: ["backdrop-blur-md"],
+  safelist: [
+    "text-pink-500",
+    "group-hover:text-pink-500",
+    "text-green-500",
+    "group-hover:text-green-500",
+    "text-red-500",
+    "group-hover:text-red-500",
+    "text-blue-500",
+    "group-hover:text-blue-500",
+    "text-purple-500",
+    "group-hover:text-purple-500",
+    "items-center",
+    "text-roxo",
+  ],
   theme: {
     screens: {
       xs: "375px",
@@ -20,12 +33,20 @@ const config: Config = {
     },
     extend: {
       boxShadow: {
-        underline: "0 3px tomato",
+        roxoUnderline: "0 3px #590b55",
       },
       colors: {
         laranja: {
           DEFAULT: "#d95000",
           hover: "#c04600",
+        },
+        roxo: {
+          DEFAULT: "#590B55",
+          hover: "#4c0a49",
+        },
+        amarelo: {
+          DEFAULT: "#FFC900",
+          // hover: "#b28600",
         },
         semiwhite: {
           DEFAULT: "#ffffff75",

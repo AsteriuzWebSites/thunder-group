@@ -8,7 +8,10 @@ let prevScrollpos = window.scrollY;
 /* -------------------------------------------------------------------------- */
 window.onscroll = function () {
   let currentScrollPos = window.scrollY;
-  if (prevScrollpos > currentScrollPos || currentScrollPos < 96 || drawerToggle.checked
+  if (
+    prevScrollpos > currentScrollPos ||
+    currentScrollPos < 96 ||
+    drawerToggle.checked
   ) {
     nav.style.transform = "translateY(0)";
   } else {
@@ -20,8 +23,7 @@ window.onscroll = function () {
     // padding 12px height
     nav.classList.add("backdrop-blur-md");
     navInner.style.padding = "12px 8px";
-  }
-  else {
+  } else {
     nav.classList.remove("backdrop-blur-md");
     navInner.style.padding = "24px 8px";
   }
@@ -32,7 +34,6 @@ window.onscroll = function () {
 /* -------------------------------------------------------------------------- */
 let drawerOpenIcon = document.getElementById("drawer-open-icon");
 let drawerCloseIcon = document.getElementById("drawer-close-icon");
-
 
 document.addEventListener("click", function (e) {
   if (drawerToggle.checked) {

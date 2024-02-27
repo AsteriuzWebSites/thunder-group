@@ -2,6 +2,7 @@ import Image from "next/image";
 import BoticarioLogo from "@/assets/partners/boticario.webp";
 import MelissaLogo from "@/assets/partners/melissa.png";
 import DaisoLogo from "@/assets/partners/daiso.png";
+import PorscheLogo from "@/assets/partners/porsche.png";
 import { HiPlay } from "react-icons/hi2";
 
 export default function Hero() {
@@ -38,7 +39,7 @@ export default function Hero() {
             DESBLOQUEAR TODO O POTENCIAL DA SUA MARCA
           </h1>
           <div className="relative mt-8 grid w-4/5 grid-rows-2 gap-y-3 sm:w-3/5 md:w-1/2 lg:h-3 lg:grid-cols-2 lg:grid-rows-none">
-            <button className="rounded-lg rounded-l-lg bg-laranja py-4 text-sm transition-colors duration-300 hover:bg-laranja-hover lg:rounded-r-none">
+            <button className="rounded-lg rounded-l-lg bg-roxo py-4 text-sm transition-colors duration-300 hover:bg-roxo-hover lg:rounded-r-none">
               Fale com o especialista{" "}
             </button>
             <div className="absolute right-1/2 top-1/2 -translate-y-1/2 translate-x-1/2 rounded-full border-2 bg-white p-2 text-sm text-black lg:top-0 lg:translate-y-[8px]">
@@ -91,6 +92,12 @@ export default function Hero() {
             className="w-1/4 py-8 brightness-0 invert transition-transform duration-500 hover:scale-110 tall:w-1/3"
             height={40}
           />
+          {/* <img
+            src={PorscheLogo.src}
+            alt="Daiso"
+            className="w-1/4 py-8 brightness-0 invert transition-transform duration-500 hover:scale-110 tall:w-1/3"
+            height={40}
+          /> */}
         </div>
       </div>
     </section>
