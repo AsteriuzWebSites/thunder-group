@@ -3,10 +3,8 @@ import Link from "next/link";
 import Image from "next/image";
 import FooterCategory from "./FooterCategory";
 import {
-  IoLogoFacebook,
   IoLogoInstagram,
   IoLogoWhatsapp,
-  IoLocationOutline,
   IoCallOutline,
   IoTimeOutline,
   IoLogoYoutube,
