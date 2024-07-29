@@ -1,6 +1,5 @@
-import Logo from "@/assets/logo/Logo.svg";
+import Logo from "@/assets/logo/Logo";
 import Link from "next/link";
-import Image from "next/image";
 import FooterCategory from "./FooterCategory";
 import {
   IoLogoInstagram,
@@ -20,11 +19,9 @@ export default function Footer() {
         <div className="md:flex md:justify-between">
           <div className="obs-hidden mb-8 ml-0 mt-0 pb-4 pt-4 md:m-4 md:mb-0 md:mr-10 md:pt-0 lg:ml-16 lg:mr-10">
             <a href="#start" className="flex justify-center align-middle">
-              <Image
-                width={64}
-                src={Logo}
-                className="grayscale duration-300 ease-in-out hover:grayscale-0"
-                alt="Logo do Saúde dos Olhos MT"
+              <Logo
+                id="logo-nav"
+                className="h-28 cursor-pointer duration-300 ease-in-out hover:scale-110 md:h-32 md:hover:scale-110"
               />
             </a>
           </div>
@@ -83,7 +80,6 @@ export default function Footer() {
                 },
               ]}
             />
-            {/* horario de atendimento */}
             <FooterCategory
               title="Atendimento"
               activeLink={false}
@@ -97,20 +93,19 @@ export default function Footer() {
                 },
               ]}
             />
-            {/* siga nos */}
             <FooterCategory
               title="Siga-nos"
               activeLink={true}
               delay={12}
               links={[
-                {
-                  text: "Whatsapp",
-                  href: "https://wa.me/5511970319836",
-                  renderIcon: (className) => (
-                    <IoLogoWhatsapp className={className} />
-                  ),
-                  color: "text-green-500",
-                },
+                // {
+                //   text: "Whatsapp",
+                //   href: "https://wa.me/5511970319836",
+                //   renderIcon: (className) => (
+                //     <IoLogoWhatsapp className={className} />
+                //   ),
+                //   color: "text-green-500",
+                // },
                 {
                   text: "Instagram",
                   href: "https://www.instagram.com/_thundergroup/",
@@ -132,8 +127,8 @@ export default function Footer() {
           </div>
         </div>
         <hr className="my-6 border-gray-200 sm:mx-auto lg:mt-8" />
-        <div className="mb-4 mt-8 flex w-full flex-col flex-wrap items-center justify-center gap-x-6 gap-y-8 text-center md:flex-row md:justify-between lg:mb-2 lg:mt-8">
-          <div className="text-md order-last flex flex-col md:order-first md:-mr-16 md:text-left">
+        <div className="mb-4 mt-8 flex w-full flex-col flex-wrap items-center justify-center gap-x-6 gap-y-8 text-center md:flex-row md:justify-between lg:mb-2">
+          <div className="text-md order-last flex flex-col md:order-first md:-mr-10 md:text-left">
             <span>
               © 2024
               <a
@@ -150,16 +145,16 @@ export default function Footer() {
           <a
             target="_blank"
             href="https://wa.me/5511970319836"
-            className="bold mr-3 flex items-center justify-center gap-2 rounded-lg  bg-roxo p-4 text-center text-xl font-bold uppercase text-white shadow-lg duration-300 ease-in-out hover:bg-roxo-hover sm:text-2xl md:mr-0"
+            className="bold flex items-center justify-center gap-2 rounded-lg  bg-roxo p-4 text-center text-xl font-bold uppercase text-white shadow-lg duration-300 ease-in-out hover:bg-roxo-hover sm:text-2xl"
           >
             <IoLogoWhatsapp className="text-[40px]" />
             Fale Conosco
           </a>
-          <div className="order-first mt-4 flex justify-center space-x-5 sm:mt-0 md:order-last">
-            <a target="_blank" href="https://wa.me/5511970319836">
+          <div className="order-first mt-4 hidden justify-center space-x-5 sm:mt-0 md:order-last md:flex">
+            {/* <a target="_blank" href="https://wa.me/5511970319836">
               <IoLogoWhatsapp className="text-[40px] duration-300 ease-in-out hover:fill-green-500" />
               <span className="sr-only">Whatsapp</span>
-            </a>
+            </a> */}
             <a target="_blank" href="https://www.instagram.com/_thundergroup/">
               <IoLogoInstagram className="text-[40px] duration-300 ease-in-out hover:fill-pink-500" />
               <span className="sr-only">Página do Instagram</span>

@@ -3,42 +3,45 @@ import BoticarioLogo from "@/assets/partners/boticario.webp";
 import MelissaLogo from "@/assets/partners/melissa.png";
 import DaisoLogo from "@/assets/partners/daiso.png";
 import PorscheLogo from "@/assets/partners/porsche.png";
+import SKLogo from "@/assets/partners/sk.png";
+import VianaLogo from "@/assets/partners/viana.png";
+import VicLogo from "@/assets/partners/vic.png";
 import { HiPlay } from "react-icons/hi2";
 
 export default function Hero() {
   return (
-    <section className="relative flex h-[650px] flex-col items-center justify-end md:h-screen md:justify-center">
-      <div className="mb-10 w-screen max-w-screen-xl px-8">
+    <section className="relative flex h-[650px] flex-col items-center justify-center md:h-screen md:justify-center">
+      <div className="-mb-10 w-screen max-w-screen-xl px-8 sm:mb-10">
         <div className="w-full max-w-screen-lg py-4">
           <h2 className="font-heading text-sm font-normal md:text-base">
             O ESTÚDIO DE EDIÇÃO DE VÍDEO PARA
           </h2>
-          <ul className="my-5 flex flex-wrap gap-5 font-category text-sm xs:text-base">
+          <ul className="mb-4 mt-2 flex flex-wrap gap-5 font-category text-sm tracking-wide md:my-4 md:text-base">
             <li>
-              <ul className="flex gap-5">
-                <li className="rounded-lg px-3 py-2 outline outline-1 outline-semiwhite transition-transform duration-300 hover:scale-105 md:text-base">
-                  ENTRETENIMENTO
+              <ul className="flex gap-4 md:gap-5">
+                <li className="rounded-lg px-2 pb-1 pt-2 outline outline-1 outline-semiwhite transition-transform duration-300 hover:scale-105 md:px-4">
+                  Design
                 </li>
-                <li className="rounded-lg px-3 py-2 outline outline-1 outline-semiwhite transition-all duration-300 hover:scale-105 md:text-base">
+                <li className="rounded-lg px-2 pb-1 pt-2 outline outline-1 outline-semiwhite transition-all duration-300 hover:scale-105 md:px-4">
                   SOCIAL MEDIA
                 </li>
               </ul>
             </li>
             <li>
               <ul className="flex gap-5">
-                <li className="rounded-lg px-3 py-2 outline outline-1 outline-semiwhite transition-all duration-300 hover:scale-105 md:text-base">
+                <li className="rounded-lg px-2 pb-1 pt-2 outline outline-1 outline-semiwhite transition-all duration-300 hover:scale-105 md:px-4">
                   MARKETING
                 </li>
-                <li className="rounded-lg px-3 py-2 outline outline-1 outline-semiwhite transition-all duration-300 hover:scale-105 md:text-base">
+                <li className="rounded-lg px-2 pb-1 pt-2 outline outline-1 outline-semiwhite transition-all duration-300 hover:scale-105 md:px-4">
                   E-COMMERCE
                 </li>
               </ul>
             </li>
           </ul>
-          <h1 className="font-heading text-2xl font-bold leading-snug tracking-tight xs:text-3xl sm:text-4xl md:text-[63px] md:leading-none">
+          <h1 className="font-heading text-base font-bold leading-snug tracking-tight xs:text-2xl sm:text-4xl md:text-[63px] md:leading-none">
             DESBLOQUEAR TODO O POTENCIAL DA SUA MARCA
           </h1>
-          <div className="relative mt-8 grid w-4/5 grid-rows-2 gap-y-3 sm:w-3/5 md:w-1/2 lg:h-3 lg:grid-cols-2 lg:grid-rows-none">
+          <div className="relative mt-3 grid w-4/5 grid-rows-2 gap-y-3 sm:w-3/5 md:mt-8 md:w-1/2 lg:h-3 lg:grid-cols-2 lg:grid-rows-none">
             <button className="rounded-lg rounded-l-lg bg-roxo py-4 text-sm transition-colors duration-300 hover:bg-roxo-hover lg:rounded-r-none">
               Fale com o especialista{" "}
             </button>
@@ -71,33 +74,46 @@ export default function Hero() {
           </div>
         </div>
       </div>
-      <div className="absolute bottom-0 hidden flex-col items-center font-body md:flex tall:mb-6">
+      <div className="absolute bottom-0 hidden flex-col items-center font-body md:mb-4 md:flex">
         <h4 className="text-sm tracking-wider">
           NOSSOS PARCEIROS DE CONFIANÇA
         </h4>
         <div className="flex w-full max-w-[450px] items-center justify-center gap-x-20">
-          <img
-            src={BoticarioLogo.src}
+          <Image
+            src={BoticarioLogo}
             alt="Boticario"
-            className="w-1/4 py-8 brightness-0 invert transition-transform duration-500 hover:scale-110 tall:w-1/3"
+            className="w-1/5 py-8 brightness-0 invert transition-transform duration-500 hover:scale-110 tall:w-1/4"
           />
-          <img
-            src={MelissaLogo.src}
+          <Image
+            src={MelissaLogo}
             alt="Melissa"
-            className="w-1/4 py-8 brightness-0 invert transition-transform duration-500 hover:scale-110 tall:w-1/3"
+            className="w-1/5 py-8 brightness-0 invert transition-transform duration-500 hover:scale-110 tall:w-1/4"
           />
-          <img
-            src={DaisoLogo.src}
+          <Image
+            src={DaisoLogo}
             alt="Daiso"
-            className="w-1/4 py-8 brightness-0 invert transition-transform duration-500 hover:scale-110 tall:w-1/3"
-            height={40}
+            className="w-1/5 py-8 brightness-0 invert transition-transform duration-500 hover:scale-110 tall:w-1/4"
           />
-          {/* <img
-            src={PorscheLogo.src}
-            alt="Daiso"
-            className="w-1/4 py-8 brightness-0 invert transition-transform duration-500 hover:scale-110 tall:w-1/3"
-            height={40}
-          /> */}
+          <Image
+            src={PorscheLogo}
+            alt="Porsche"
+            className="w-1/5 py-8 brightness-0 invert transition-transform duration-500 hover:scale-110 tall:w-1/5"
+          />
+          <Image
+            src={SKLogo}
+            alt="SK"
+            className="w-1/5 py-8 brightness-0 invert transition-transform duration-500 hover:scale-110 tall:w-1/4"
+          />
+          <Image
+            src={VianaLogo}
+            alt="Viana"
+            className="w-1/5 py-8 brightness-0 invert transition-transform duration-500 hover:scale-110 tall:w-1/4"
+          />
+          <Image
+            src={VicLogo}
+            alt="Vic"
+            className="w-1/5 py-8 brightness-0 invert transition-transform duration-500 hover:scale-110 tall:w-1/4"
+          />
         </div>
       </div>
     </section>

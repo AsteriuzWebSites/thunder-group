@@ -20,7 +20,7 @@ export default function Header() {
             <div className="drawer-content z-[70]">
               <label
                 htmlFor="drawer-nav"
-                className="btn btn-ghost z-[70] hover:bg-transparent"
+                className="btn btn-ghost z-[70] ml-6 rounded-lg bg-roxo p-2"
               >
                 {/* <HiOutlineBars3CenterLeft className="h-8 w-8" /> */}
                 <HiMiniBars3CenterLeft
@@ -71,7 +71,7 @@ export default function Header() {
           <Link href="/">
             <Logo
               id="logo-nav"
-              className=" ml-8 h-16 w-16 shrink-0 translate-x-1/2 cursor-pointer"
+              className="ml-8 h-16 w-16 shrink-0 translate-x-1/2 cursor-pointer duration-300 ease-in-out hover:scale-150 md:hover:scale-125"
             />
           </Link>
         </div>
@@ -108,7 +108,7 @@ export default function Header() {
             aria-label="Fale Conosco"
             href="https://wa.me/5511970319836"
             target="_blank"
-            className="mr-4 flex items-center gap-2 rounded-md bg-roxo p-3 text-center text-base font-bold text-white shadow-md duration-300 ease-in-out hover:bg-roxo-hover hover:shadow-xl sm:mr-8 sm:px-7 sm:py-3 sm:hover:-translate-y-2"
+            className="mr-4 flex items-center gap-2 rounded-lg bg-roxo p-3 text-center text-base font-bold text-white shadow-md duration-300 ease-in-out hover:bg-roxo-hover hover:shadow-xl sm:mr-8 sm:px-7 sm:py-3 sm:hover:-translate-y-2"
           >
             <FaWhatsapp className="text-4xl sm:text-3xl" />
             <p className="hidden items-center justify-center text-lg sm:flex">
