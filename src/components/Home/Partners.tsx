@@ -7,10 +7,10 @@ import SKLogo from "@/assets/partners/sk.png";
 import VianaLogo from "@/assets/partners/viana.png";
 import VicLogo from "@/assets/partners/vic.png";
 
-export default function About() {
+export default function Partners() {
   return (
     <section>
-      <div className="relative z-10 my-8 flex flex-col flex-wrap items-center font-body md:hidden">
+      <div className="relative z-10 my-8 flex flex-col flex-wrap items-center font-body lg:hidden">
         <h4 className="mb-10 text-center text-sm tracking-wider text-[#ffffff]">
           NOSSOS PARCEIROS DE CONFIANÇA
         </h4>

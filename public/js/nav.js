@@ -47,10 +47,8 @@ document.addEventListener("click", function (e) {
 
 let drawerButton = document.getElementsByClassName("drawer-button");
 
-console.log(drawerButton);
 
 for (let i = 0; i < drawerButton.length; i++) {
-  console.log(drawerButton[i]);
   drawerButton[i].addEventListener("click", function () {
     drawerToggle.checked = false;
   });

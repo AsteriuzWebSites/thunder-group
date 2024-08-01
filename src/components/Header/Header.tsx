@@ -20,7 +20,7 @@ export default function Header() {
             <div className="drawer-content z-[70]">
               <label
                 htmlFor="drawer-nav"
-                className="btn btn-ghost z-[70] ml-6 rounded-lg bg-roxo p-2"
+                className="btn btn-ghost z-[70] ml-3 rounded-lg bg-roxo p-2"
               >
                 {/* <HiOutlineBars3CenterLeft className="h-8 w-8" /> */}
                 <HiMiniBars3CenterLeft
@@ -43,7 +43,7 @@ export default function Header() {
               <ul className="menu menu-lg min-h-full w-80 max-w-full bg-black p-4 text-white ">
                 <li className="mt-24 hover:bg-transparent">
                   <Link
-                    href="/"
+                    href="#hero"
                     className="drawer-button cursor-pointer px-6 py-3"
                   >
                     HOME
@@ -79,7 +79,7 @@ export default function Header() {
           <ul className="flex px-1 text-base font-bold tracking-wider">
             <li>
               <Link
-                href="/"
+                href="#hero"
                 className="cursor-pointer rounded-none px-6 py-3 transition-all duration-300 hover:bg-transparent hover:bg-none hover:shadow-roxoUnderline"
               >
                 HOME
@@ -103,10 +103,10 @@ export default function Header() {
             </li>
           </ul>
         </div>
-        <div className="navbar-end z-50 hidden sm:flex">
+        <div className="navbar-end z-50 hidden lg:flex">
           <a
             aria-label="Fale Conosco"
-            href="https://wa.me/5511970319836"
+            href="https://wa.me/5511966017667"
             target="_blank"
             className="mr-4 flex items-center gap-2 rounded-lg bg-roxo p-3 text-center text-base font-bold text-white shadow-md duration-300 ease-in-out hover:bg-roxo-hover hover:shadow-xl sm:mr-8 sm:px-7 sm:py-3 sm:hover:-translate-y-2"
           >

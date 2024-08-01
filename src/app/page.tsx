@@ -1,10 +1,11 @@
 import "@/styles/video-background.css";
 import Hero from "@/components/Home/Hero";
-import About from "@/components/Home/About";
+import Partners from "@/components/Home/Partners";
+import Explore from "@/components/Home/Explore";
 
 export default function Home() {
   return (
-    <main className="min-h-[calc(100vh*2)] overflow-x-hidden">
+    <main className="overflow-x-hidden">
       <div
         id="video-background"
         data-vbg-load-background="false"
@@ -13,7 +14,8 @@ export default function Home() {
       ></div>
       <div className="video-background-overlay"></div>
       <Hero />
-      <About />
+      <Partners />
+      <Explore />
     </main>
   );
 }

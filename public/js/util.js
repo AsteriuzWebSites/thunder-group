@@ -1,47 +1,67 @@
 let tag = document.createElement("script");
-
 tag.src = "https://www.youtube.com/iframe_api";
 let firstScriptTag = document.getElementsByTagName("script")[0];
 firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
-var trailerPlayer;
+let players = {};
+let readyStates = {};
 
-function waitForYoutubeApi() {
+function waitForYoutubeApi(videoIds) {
   if (typeof YT !== "undefined") {
-    try {
-      trailerPlayer = new YT.Player("trailer-player", {
-        height: "100%",
-        width: "100%",
-        videoId: "naMB8YJ5yps",
-      });
-    } catch (e) {
-      console.log(e);
-    }
+    videoIds.forEach((videoId) => {
+      try {
+        players[videoId] = new YT.Player(videoId, {
+          height: "100%",
+          width: "100%",
+          videoId: videoId,
+        });
+        readyStates[videoId] = true;
+      } catch (e) {
+        console.log(e);
+      }
+    });
   } else {
-    setTimeout(waitForYoutubeApi, 100);
+    setTimeout(() => waitForYoutubeApi(videoIds), 100);
   }
 }
 
-waitForYoutubeApi();
+/* -------------------------------------------------------------------------- */
+/*                          ID dos Vídeos do Youtube                          */
+/* -------------------------------------------------------------------------- */
 
-trailerButton = document.getElementById("trailer-button");
-trailerModal = document.getElementById("trailer-modal");
+const videoIds = [
+  "zW5wpJY1rgQ",
+  "5HsTGE-tl4o",
+  "1oahTaVIQvk",
+  "9r8VtP5kdoo",
+  "K5Ni6Zh6MCY",
+  "jrTMMG0zJyI",
+];
+waitForYoutubeApi(videoIds);
 
-trailerButton.addEventListener("click", function () {
-  document.getElementById("trailer-modal").showModal();
-  try {
-    trailerPlayer.playVideo();
-  } catch (e) {
-    console.log(e);
-  }
-});
+videoIds.forEach((videoId) => {
+  const trailerButton = document.getElementById(`trailer-button-${videoId}`);
+  const trailerModal = document.getElementById(`trailer-modal-${videoId}`);
 
-document.addEventListener("click", function (e) {
-  console.log(e);
-  if (e.target.id !== "trailer-button") {
-    trailerPlayer.pauseVideo();
-    trailerModal.close();
-  }
+  trailerButton.addEventListener("click", function () {
+    trailerModal.showModal();
+    try {
+      if (readyStates[videoId]) {
+        players[videoId].playVideo();
+      }
+    } catch (e) {
+      console.log(e);
+    }
+  });
+
+  document.addEventListener("click", function (e) {
+    if (!e.target.closest(".trailer-button") && trailerModal.open) {
+      if (readyStates[videoId]) {
+        players[videoId].pauseVideo();
+      }
+      trailerModal.close();
+    }
+  });
 });
 
 /* -------------------------------------------------------------------------- */
