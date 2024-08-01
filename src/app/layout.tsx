@@ -50,12 +50,8 @@ export default function RootLayout({
         <Footer />
       </body>
       <Script src="thunder-group/js/nav.js"></Script>
-      <Script
-        strategy="lazyOnload"
-        type="module"
-        src="thunder-group/js/video-background.js"
-      ></Script>
-      <Script src="thunder-group/js/util.js" defer></Script>
+      <Script type="module" src="thunder-group/js/video-background.js"></Script>
+      <Script src="thunder-group/js/util.js"></Script>
     </html>
   );
 }

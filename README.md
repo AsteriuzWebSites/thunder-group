@@ -1,36 +1,62 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<p align="center">
+  <img src="./src/assets/logo/Logo.svg" width="80" alt="Thunder Group" />
+</p>
 
-## Getting Started
+# Thunder Group
 
-First, run the development server:
+Este é um projeto [Next.js](https://nextjs.org/) para o Thunder Group. Ele é inicializado com [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) e usa Tailwind CSS para estilização.
+
+
+## Estrutura do Projeto
+
+O projeto tem a seguinte estrutura:
+
+- `src/`: Contém o código fonte do projeto.
+- `public/`: Contém arquivos estáticos como imagens e fontes.
+- `tailwind.config.ts`: Arquivo de configuração do Tailwind CSS.
+- `next.config.mjs`: Arquivo de configuração do Next.js.
+- `package.json`: Lista as dependências e scripts do projeto.
+
+## Começando
+
+Primeiro, instale as dependências:
+
+```bash
+npm install
+```
+
+Em seguida, execute o servidor de desenvolvimento:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Abra [http://localhost:3000](http://localhost:3000) no seu navegador para ver o resultado.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Construindo o Projeto
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Para construir o projeto, execute:
 
-## Learn More
+```bash
+npm run build
+```
 
-To learn more about Next.js, take a look at the following resources:
+## Linting do Projeto
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Para fazer o lint do projeto, execute:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+```bash
+npm run lint
+```
 
-## Deploy on Vercel
+## Implantação
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+O projeto está configurado para ser implantado no GitHub Pages. A implantação é gerenciada por um fluxo de trabalho do GitHub Actions definido em `.github/workflows/deploy.yml`.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Contribuindo
+
+Contribuições são bem-vindas! Por favor, certifique-se de fazer o lint do seu código antes de enviar um pull request.
+
+## Licença
+
+Este projeto está licenciado sob a Licença MIT.
