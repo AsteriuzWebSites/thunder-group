@@ -40,6 +40,8 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const DEV = false;
+
   return (
     <html lang="pt-br">
       <body
@@ -49,12 +51,27 @@ export default function RootLayout({
         {children}
         <Footer />
       </body>
-      {/* <Script src="thunder-group/js/nav.js"></Script>
-      <Script type="module" src="thunder-group/js/video-background.js"></Script>
-      <Script src="thunder-group/js/util.js"></Script> */}
-      <Script src="js/nav.js"></Script>
-      <Script type="module" src="js/video-background.js"></Script>
-      <Script src="js/util.js"></Script>
+      {(DEV && (
+        <>
+          <Script src="thunder-group/js/nav.js"></Script>
+          <Script
+            strategy="lazyOnload"
+            type="module"
+            src="thunder-group/js/video-background.js"
+          ></Script>
+          <Script src="thunder-group/js/util.js" defer></Script>
+        </>
+      )) || (
+        <>
+          <Script src="js/nav.js"></Script>
+          <Script
+            strategy="lazyOnload"
+            type="module"
+            src="js/video-background.js"
+          ></Script>
+          <Script src="js/util.js" defer></Script>
+        </>
+      )}
     </html>
   );
 }
