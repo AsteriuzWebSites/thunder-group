@@ -49,9 +49,12 @@ export default function RootLayout({
         {children}
         <Footer />
       </body>
-      <Script src="thunder-group/js/nav.js"></Script>
+      {/* <Script src="thunder-group/js/nav.js"></Script>
       <Script type="module" src="thunder-group/js/video-background.js"></Script>
-      <Script src="thunder-group/js/util.js"></Script>
+      <Script src="thunder-group/js/util.js"></Script> */}
+      <Script src="js/nav.js"></Script>
+      <Script type="module" src="js/video-background.js"></Script>
+      <Script src="js/util.js"></Script>
     </html>
   );
 }
