@@ -63,13 +63,15 @@ export default function ExploreCard({
             <dialog id={`trailer-modal-${vimeoID}`} className="modal">
               <div
                 id="trailer-box"
-                className="modal-box max-w-[360px] bg-black p-0"
+                className="modal-box aspect-[9/16] bg-black p-0 w-3/4 md:w-full"
               >
                 <iframe
                   id={`iframe-${vimeoID}`}
                   src={`https://player.vimeo.com/video/${vimeoID}?title=0&byline=0&portrait=0&badge=0&autopause=0&player_id=0&app_id=58479`}
-                  width={360}
-                  height={640}
+                  // width={360}
+                  // height={640}
+                  // responsive
+                  className="h-full w-full"
                   frameBorder={0}
                   allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
                   title="Daiso Natal"
