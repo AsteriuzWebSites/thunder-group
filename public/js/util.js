@@ -25,27 +25,38 @@ function waitForYoutubeApi(videoIds) {
   }
 }
 
+function waitForVimeoApi(videoIds) {
+  if (typeof Vimeo !== "undefined") {
+    videoIds.forEach((videoId) => {
+      try {
+        const iframe = document.getElementById(`iframe-${videoId}`);
+        players[videoId] = new Vimeo.Player(iframe);
+        readyStates[videoId] = true;
+      } catch (e) {
+        console.log(e);
+      }
+    });
+  } else {
+    setTimeout(() => waitForVimeoApi(videoIds), 100);
+  }
+}
+
 /* -------------------------------------------------------------------------- */
 /*                          ID dos Vídeos do Youtube                          */
 /* -------------------------------------------------------------------------- */
 
-const videoIds = [
-  "naMB8YJ5yps", 
-  "zW5wpJY1rgQ",
-  "5HsTGE-tl4o",
-  "1oahTaVIQvk",
-  "9r8VtP5kdoo",
-  "K5Ni6Zh6MCY",
-  "jrTMMG0zJyI",
+const youtubeIds = [
+  "naMB8YJ5yps", // Trailer
+  "LYL0-9-Zb5s", // Daniel Penim
 ];
-waitForYoutubeApi(videoIds);
+waitForYoutubeApi(youtubeIds);
 
-videoIds.forEach((videoId) => {
-  const trailerButton = document.getElementById(`trailer-button-${videoId}`);
-  const trailerModal = document.getElementById(`trailer-modal-${videoId}`);
+youtubeIds.forEach((videoId) => {
+  const videoButton = document.getElementById(`trailer-button-${videoId}`);
+  const videoModal = document.getElementById(`trailer-modal-${videoId}`);
 
-  trailerButton.addEventListener("click", function () {
-    trailerModal.showModal();
+  videoButton.addEventListener("click", function () {
+    videoModal.showModal();
     try {
       if (readyStates[videoId]) {
         players[videoId].playVideo();
@@ -56,11 +67,50 @@ videoIds.forEach((videoId) => {
   });
 
   document.addEventListener("click", function (e) {
-    if (!e.target.closest(".trailer-button") && trailerModal.open) {
+    if (!e.target.closest(".trailer-button") && videoModal.open) {
       if (readyStates[videoId]) {
         players[videoId].pauseVideo();
       }
-      trailerModal.close();
+      videoModal.close();
+    }
+  });
+});
+
+/* -------------------------------------------------------------------------- */
+/*                           ID dos Vídeos do Vimeo                           */
+/* -------------------------------------------------------------------------- */
+
+const vimeoIds = [
+  "993750211", // Daiso
+  "993770374", // Daiso
+  "993770393", // Nelson
+  "993770328", // Studio
+  "993770350", // Studio Kolles
+];
+waitForVimeoApi(vimeoIds);
+
+vimeoIds.forEach((videoId) => {
+  const videoButton = document.getElementById(`trailer-button-${videoId}`);
+  const videoModal = document.getElementById(`trailer-modal-${videoId}`);
+
+  videoButton.addEventListener("click", function () {
+    console.log(readyStates);
+    try {
+      if (readyStates[videoId]) {
+        players[videoId].play();
+      }
+    } catch (e) {
+      console.log(e);
+    }
+    videoModal.showModal();
+  });
+
+  document.addEventListener("click", function (e) {
+    if (!e.target.closest(".trailer-button") && videoModal.open) {
+      if (readyStates[videoId]) {
+        players[videoId].pause();
+      }
+      videoModal.close();
     }
   });
 });

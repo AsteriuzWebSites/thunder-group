@@ -1,6 +1,10 @@
 import Image from "next/image";
 import ExploreCard from "./Utils/ExploreCard";
 import TrailerImage from "@/assets/portfolio/trailer.jpg";
+import Daiso1 from "@/assets/portfolio/daiso.jpg";
+import DanielPenim from "@/assets/portfolio/daniel-penin.jpeg";
+import Porsche from "@/assets/portfolio/porsche.jpeg";
+import StudioKolle from "@/assets/portfolio/studio-kolle.png";
 
 export default function Explore() {
   return (
@@ -19,43 +23,45 @@ export default function Explore() {
       <div className="-mx-2 flex flex-col flex-wrap md:flex-row">
         <div className="flex flex-wrap md:w-1/2">
           <ExploreCard
-            title="Carros"
-            image="https://images.pexels.com/photos/1402787/pexels-photo-1402787.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-            // image={TrailerImage}
+            title="Daiso Japan"
+            // image="https://images.pexels.com/photos/1402787/pexels-photo-1402787.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            image={Daiso1}
             size="small"
-            id="zW5wpJY1rgQ"
+            vimeoID="993750211"
           />
           <ExploreCard
-            title="Flores"
+            title="Daiso Japan II"
             image="https://images.pexels.com/photos/1379636/pexels-photo-1379636.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
             size="small"
-            id="5HsTGE-tl4o"
+            vimeoID="993770374"
           />
           <ExploreCard
-            title="Balões"
-            image="https://images.pexels.com/photos/36487/above-adventure-aerial-air.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            title="Youtuber Daniel Penin"
+            image={DanielPenim}
             size="large"
-            id="1oahTaVIQvk"
+            ytID="LYL0-9-Zb5s"
           />
         </div>
         <div className="flex flex-wrap md:w-1/2">
           <ExploreCard
-            title="Floresta"
-            image="https://images.pexels.com/photos/33109/fall-autumn-red-season.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            title="Porsche Cup"
+            image={Porsche}
             size="large"
-            id="9r8VtP5kdoo"
+            vimeoID="993770393"
           />
           <ExploreCard
-            title="Neve"
-            image="https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(75).webp"
+            title="Studio Kolles"
+            // image="https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(75).webp"
+            image={StudioKolle}
             size="small"
-            id="K5Ni6Zh6MCY"
+            vimeoID="993770328"
+            
           />
           <ExploreCard
-            title="Sakura"
+            title="Studio Kolles II"
             image="https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(77).webp"
             size="small"
-            id="jrTMMG0zJyI"
+            vimeoID="993770350"
           />
         </div>
       </div>

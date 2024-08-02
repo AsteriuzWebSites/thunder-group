@@ -10,6 +10,7 @@ type Props = {
     renderIcon?: (className: string) => React.ReactNode;
     color?: string;
     fontSize?: string;
+    target?: string;
   }[];
 };
 
@@ -19,6 +20,12 @@ export default function FooterCategory({
   activeLink,
   links,
 }: Props) {
+  links = links.map((link) => {
+    if (!link.target) {
+      link.target = "_blank";
+    }
+    return link;
+  });
   return (
     <div className="obs-hidden" style={{ ["--delay" as any]: delay }}>
       <h2 className="mb-6 font-heading text-lg font-bold uppercase">{title}</h2>
@@ -26,7 +33,11 @@ export default function FooterCategory({
         {links.map((link, index) => (
           <li key={index} className="mb-4 transition-colors md:justify-start">
             {link.href ? (
-              <Link href={link.href} className={`group inline`}>
+              <Link
+                href={link.href}
+                target={link.target}
+                className={`group inline`}
+              >
                 {link.renderIcon &&
                   link.renderIcon(
                     `text-2xl inline shrink-0 transition-colors group-hover:${link.color}`,

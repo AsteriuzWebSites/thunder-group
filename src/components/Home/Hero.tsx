@@ -10,7 +10,10 @@ import { HiPlay } from "react-icons/hi2";
 
 export default function Hero() {
   return (
-    <section id="hero" className="relative flex h-[650px] flex-col items-center justify-center md:h-screen">
+    <section
+      id="hero"
+      className="relative flex h-[650px] flex-col items-center justify-center md:h-screen"
+    >
       <div className="-mb-10 w-screen max-w-screen-xl px-5 lg:mb-10 xl:px-0">
         <div className="w-full max-w-screen-lg py-4">
           <h2 className="font-heading text-sm font-normal md:text-base">
@@ -42,9 +45,13 @@ export default function Hero() {
             DESBLOQUEAR TODO O POTENCIAL DA SUA MARCA
           </h1>
           <div className="relative mt-3 grid w-4/5 grid-rows-2 gap-y-3 sm:w-3/5 md:mt-8 md:w-1/2 lg:h-3 lg:grid-cols-2 lg:grid-rows-none">
-            <button className="rounded-lg rounded-l-lg bg-roxo py-4 text-sm transition-colors duration-300 hover:bg-roxo-hover lg:rounded-r-none">
+            <a
+              href="https://wa.me/5511966017667"
+              target="_blank"
+              className="flex items-center justify-center rounded-lg rounded-l-lg bg-roxo py-4 align-middle text-sm transition-colors duration-300 hover:bg-roxo-hover lg:rounded-r-none"
+            >
               Fale com o especialista{" "}
-            </button>
+            </a>
             <div className="absolute right-1/2 top-1/2 -translate-y-1/2 translate-x-1/2 rounded-full border-2 bg-white p-2 text-sm text-black lg:top-0 lg:translate-y-[8px]">
               <div className="absolute left-0 top-0 h-full w-full scale-[1.4] animate-[pulse-lg_2s_cubic-bezier(0.4,0,0.6,1)_infinite]  rounded-full bg-white opacity-50"></div>
               <span className="relative z-10">Ou</span>

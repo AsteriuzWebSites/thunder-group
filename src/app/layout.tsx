@@ -40,7 +40,7 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const DEV = false;
+  const DEV = true;
 
   return (
     <html lang="pt-br">
@@ -59,6 +59,11 @@ export default function RootLayout({
             type="module"
             src="thunder-group/js/video-background.js"
           ></Script>
+          <Script
+            strategy="lazyOnload"
+            type="module"
+            src="https://player.vimeo.com/api/player.js"
+          ></Script>
           <Script src="thunder-group/js/util.js" defer></Script>
         </>
       )) || (
@@ -68,6 +73,11 @@ export default function RootLayout({
             strategy="lazyOnload"
             type="module"
             src="js/video-background.js"
+          ></Script>
+          <Script
+            strategy="lazyOnload"
+            type="module"
+            src="https://player.vimeo.com/api/player.js"
           ></Script>
           <Script src="js/util.js" defer></Script>
         </>

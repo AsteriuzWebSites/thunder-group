@@ -10,8 +10,8 @@ import {
   IoHomeOutline,
   IoImageOutline,
   IoPeopleOutline,
-  IoMail,
   IoMailOutline,
+  IoLogoLinkedin,
 } from "react-icons/io5";
 
 export default function Footer() {
@@ -27,7 +27,7 @@ export default function Footer() {
               />
             </Link>
           </div>
-          <div className="grid grid-cols-1 gap-8 text-center sm:grid-cols-2 sm:gap-6 md:w-10/12 md:grid-cols-4 md:gap-10 md:text-left lg:grid-cols-[2fr,2fr,2fr,1fr]">
+          <div className="grid grid-cols-1 gap-8 text-center sm:grid-cols-1 sm:gap-6 md:w-10/12 md:grid-cols-3 md:gap-10 md:text-left lg:grid-cols-[3fr,3fr,1fr]">
             <FooterCategory
               title="Contato"
               delay={3}
@@ -49,15 +49,15 @@ export default function Footer() {
                   ),
                   color: "text-green-500",
                 },
-                // {
-                //   text: ["contatogrupothunder@gmail.com"],
-                //   href: "mailto:contatogrupothunder@gmail.com",
-                //   renderIcon: (className) => (
-                //     <IoMailOutline className={className} />
-                //   ),
-                //   color: "text-purple-500",
-                //   fontSize: "text-xs",
-                // },
+                {
+                  text: ["contatogrupothunder@gmail.com"],
+                  href: "mailto:contatogrupothunder@gmail.com",
+                  renderIcon: (className) => (
+                    <IoMailOutline className={className} />
+                  ),
+                  color: "text-purple-500",
+                  fontSize: "text-xs xs:text-base md:text-xs lg:text-base",
+                },
               ]}
             />
             <FooterCategory
@@ -72,6 +72,7 @@ export default function Footer() {
                   renderIcon: (className) => (
                     <IoHomeOutline className={className} />
                   ),
+                  target: "_self",
                 },
                 {
                   text: "Portfólio",
@@ -80,6 +81,7 @@ export default function Footer() {
                   renderIcon: (className) => (
                     <IoImageOutline className={className} />
                   ),
+                  target: "_self",
                 },
                 {
                   text: "Contato",
@@ -88,10 +90,11 @@ export default function Footer() {
                   renderIcon: (className) => (
                     <IoPeopleOutline className={className} />
                   ),
+                  target: "_self",
                 },
               ]}
             />
-            <FooterCategory
+            {/* <FooterCategory
               title="Atendimento"
               activeLink={false}
               delay={9}
@@ -103,20 +106,20 @@ export default function Footer() {
                   ),
                 },
               ]}
-            />
+            /> */}
             <FooterCategory
               title="Siga-nos"
               activeLink={true}
               delay={12}
               links={[
-                // {
-                //   text: "Whatsapp",
-                //   href: "https://wa.me/5511966017667",
-                //   renderIcon: (className) => (
-                //     <IoLogoWhatsapp className={className} />
-                //   ),
-                //   color: "text-green-500",
-                // },
+                {
+                  text: "Linkedin",
+                  href: "https://www.linkedin.com/company/thundergroup/?viewAsMember=true",
+                  renderIcon: (className) => (
+                    <IoLogoLinkedin className={className} />
+                  ),
+                  color: "text-blue-500",
+                },
                 {
                   text: "Instagram",
                   href: "https://www.instagram.com/_thundergroup/",
@@ -166,15 +169,27 @@ export default function Footer() {
               <IoLogoWhatsapp className="text-[40px] duration-300 ease-in-out hover:fill-green-500" />
               <span className="sr-only">Whatsapp</span>
             </a> */}
-            <a target="_blank" href="https://www.instagram.com/_thundergroup/">
+
+            <Link
+              target="_blank"
+              href="https://www.linkedin.com/company/thundergroup/?viewAsMember=true"
+            >
+              <IoLogoLinkedin className="text-[40px] duration-300 ease-in-out hover:fill-blue-500" />
+              <span className="sr-only">Página do Linkedin</span>
+            </Link>
+
+            <Link
+              target="_blank"
+              href="https://www.instagram.com/_thundergroup/"
+            >
               <IoLogoInstagram className="text-[40px] duration-300 ease-in-out hover:fill-pink-500" />
               <span className="sr-only">Página do Instagram</span>
-            </a>
+            </Link>
 
-            <a target="_blank" href="https://www.youtube.com/@_thundergroup">
+            <Link target="_blank" href="https://www.youtube.com/@_thundergroup">
               <IoLogoYoutube className="text-[40px] duration-300 ease-in-out hover:fill-red-500" />
               <span className="sr-only">Página do Youtube</span>
-            </a>
+            </Link>
           </div>
         </div>
       </div>
