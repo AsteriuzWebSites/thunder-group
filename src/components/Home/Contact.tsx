@@ -4,7 +4,7 @@ import ContactImage from "@/assets/contact/astronaut.png";
 export default function Contact() {
   return (
     <section
-      id="contact"
+      id="contato"
       className="relative mb-10 flex flex-col items-center justify-center"
     >
       <div className="-mb-4 mt-8 flex w-screen max-w-screen-xl flex-col items-center justify-center px-5 py-8 md:-mb-0 md:mt-4 md:py-14 xl:px-0">
