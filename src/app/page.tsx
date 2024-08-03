@@ -2,6 +2,7 @@ import "@/styles/video-background.css";
 import Hero from "@/components/Home/Hero";
 import Partners from "@/components/Home/Partners";
 import Explore from "@/components/Home/Explore";
+import Contact from "@/components/Home/Contact";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <Hero />
       <Partners />
       <Explore />
+      <Contact />
     </main>
   );
 }

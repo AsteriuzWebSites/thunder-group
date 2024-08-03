@@ -12,7 +12,7 @@ export default function Explore() {
       id="portfolio"
       className="relative flex flex-col items-center justify-center"
     >
-      <div className="mt-5 w-screen max-w-screen-xl px-5 py-10 md:mt-0 md:py-20 xl:px-0">
+      <div className="mt-2 w-screen max-w-screen-xl px-5 py-8 md:mt-0 md:py-20 xl:px-0">
         <h2 className="mb-4 text-3xl font-bold text-white md:text-4xl">
           EXPLORE NOSSO TRABALHO
         </h2>

@@ -1,10 +1,21 @@
-let tag = document.createElement("script");
-tag.src = "https://www.youtube.com/iframe_api";
-let firstScriptTag = document.getElementsByTagName("script")[0];
-firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+// let tag = document.createElement("script");
+// tag.src = "https://www.youtube.com/iframe_api";
+// let firstScriptTag = document.getElementsByTagName("script")[0];
+// firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
 let players = {};
 let readyStates = {};
+
+function WaitForVideoBackground() {
+  if (typeof VideoBackgrounds !== "undefined") {
+    const heroVideo = new VideoBackgrounds("[data-vbg]");
+    console.log(heroVideo.playing);
+  } else {
+    setTimeout(WaitForVideoBackground, 100);
+  }
+}
+
+WaitForVideoBackground();
 
 function waitForYoutubeApi(videoIds) {
   if (typeof YT !== "undefined") {
@@ -94,7 +105,6 @@ vimeoIds.forEach((videoId) => {
   const videoModal = document.getElementById(`trailer-modal-${videoId}`);
 
   videoButton.addEventListener("click", function () {
-    console.log(readyStates);
     try {
       if (readyStates[videoId]) {
         players[videoId].play();
@@ -135,3 +145,27 @@ window.addEventListener(
   },
   { passive: true },
 );
+
+/* -------------------------------------------------------------------------- */
+/*                                Contact Form                                */
+/* -------------------------------------------------------------------------- */
+
+// document.getElementById("contactForm").addEventListener("input", function () {
+//   const name = document.getElementById("name").value;
+//   const email = document.getElementById("email").value;
+//   const message = document.getElementById("message").value;
+//   const mailtoLink = document.getElementById("mailtoLink");
+//   const subject = `Message from ${name}`;
+//   const body = `Email: ${email}%0D%0A%0D%0A${encodeURIComponent(message)}`;
+//   mailtoLink.href = `mailto:contact@example.com?subject=${encodeURIComponent(subject)}&body=${body}`;
+// });
+
+document.getElementById("mailtoLink").addEventListener("click", function () {
+  const name = document.getElementById("name").value;
+  const email = document.getElementById("email").value;
+  const message = document.getElementById("message").value;
+  const mailtoLink = document.getElementById("mailtoLink");
+  const subject = `Message from ${name}`;
+  const body = `Email: ${email}%0D%0A%0D%0A${encodeURIComponent(message)}`;
+  mailtoLink.href = `mailto:contatogrupothunder@gmail.com?subject=${encodeURIComponent(subject)}&body=${body}`;
+});

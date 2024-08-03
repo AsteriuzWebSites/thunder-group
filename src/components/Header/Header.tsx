@@ -68,7 +68,7 @@ export default function Header() {
               </ul>
             </div>
           </div>
-          <Link href="/">
+          <Link aria-label="Home" href="/">
             <Logo
               id="logo-nav"
               className="ml-8 h-16 w-16 shrink-0 translate-x-1/2 cursor-pointer duration-300 ease-in-out hover:scale-150 md:hover:scale-125"

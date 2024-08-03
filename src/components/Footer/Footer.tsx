@@ -20,7 +20,11 @@ export default function Footer() {
       <div className="bg-background mx-auto w-full max-w-screen-xl p-4">
         <div className="md:flex md:justify-between">
           <div className="obs-hidden mb-8 ml-0 mt-0 pb-4 pt-4 md:m-4 md:mb-0 md:mr-10 md:pt-0 lg:ml-16 lg:mr-10">
-            <Link href="#start" className="flex justify-center align-middle">
+            <Link
+              aria-label="Ir para o início"
+              href="#start"
+              className="flex justify-center align-middle"
+            >
               <Logo
                 id="logo-nav"
                 className="h-28 cursor-pointer duration-300 ease-in-out hover:scale-110 md:h-32 md:hover:scale-110"

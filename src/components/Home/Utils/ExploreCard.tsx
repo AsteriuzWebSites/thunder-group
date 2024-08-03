@@ -37,6 +37,7 @@ export default function ExploreCard({
             </h3>
           </div>
           <button
+            aria-label="Assista nosso vídeo"
             id={`trailer-button-${ytID || vimeoID}`}
             className="trailer-button relative z-40 flex cursor-pointer items-center justify-center rounded-full bg-white p-2"
           >
@@ -56,14 +57,14 @@ export default function ExploreCard({
                 id="trailer-modal-backdrop"
                 className="modal-backdrop"
               >
-                <button>close</button>
+                <button aria-label="Fechar">close</button>
               </form>
             </dialog>
           )) || (
             <dialog id={`trailer-modal-${vimeoID}`} className="modal">
               <div
                 id="trailer-box"
-                className="modal-box aspect-[9/16] bg-black p-0 w-3/4 md:w-full"
+                className="modal-box aspect-[9/16] w-3/4 bg-black p-0 md:w-full"
               >
                 <iframe
                   id={`iframe-${vimeoID}`}
@@ -73,8 +74,9 @@ export default function ExploreCard({
                   // responsive
                   className="h-full w-full"
                   frameBorder={0}
-                  allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
+                  allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; gyroscope; web-share; accelerometer"
                   title="Daiso Natal"
+                  referrerPolicy="strict-origin-when-cross-origin"
                 />
               </div>
               <form
@@ -82,7 +84,7 @@ export default function ExploreCard({
                 id="trailer-modal-backdrop"
                 className="modal-backdrop"
               >
-                <button>close</button>
+                <button aria-label="Fechar">close</button>
               </form>
             </dialog>
           )}

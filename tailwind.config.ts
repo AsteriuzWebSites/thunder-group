@@ -32,10 +32,23 @@ const config: Config = {
       ...defaultTheme.screens,
     },
     extend: {
+      keyframes: {
+        'border-spin': {
+          '100%': {
+            transform: 'rotate(-360deg)',
+          },
+        },
+      },
+      animation: {
+        'border-spin': 'border-spin 7s linear infinite',
+      },
       boxShadow: {
         roxoUnderline: "0 3px #590b55",
       },
       colors: {
+        semiblack: {
+          DEFAULT: "#222",
+        },
         laranja: {
           DEFAULT: "#d95000",
           hover: "#c04600",

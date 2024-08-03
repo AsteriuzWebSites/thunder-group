@@ -5,6 +5,7 @@ import Script from "next/script";
 import Header from "@/components/Header/Header";
 import localFont from "next/font/local";
 import "@/styles/animation.css";
+import "@/styles/fix.css";
 import Footer from "@/components/Footer/Footer";
 
 const poppins = Poppins({
@@ -40,7 +41,7 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const DEV = false;
+  const DEV = true;
 
   return (
     <html lang="pt-br">
@@ -54,32 +55,16 @@ export default function RootLayout({
       {(DEV && (
         <>
           <Script src="thunder-group/js/nav.js"></Script>
-          <Script
-            strategy="lazyOnload"
-            type="module"
-            src="thunder-group/js/video-background.js"
-          ></Script>
-          <Script
-            strategy="lazyOnload"
-            type="module"
-            src="https://player.vimeo.com/api/player.js"
-          ></Script>
+          <Script src="https://unpkg.com/youtube-background/jquery.youtube-background.min.js"></Script>
+          <Script src="https://player.vimeo.com/api/player.js"></Script>
           <Script src="thunder-group/js/util.js" defer></Script>
         </>
       )) || (
         <>
           <Script src="js/nav.js"></Script>
-          <Script
-            strategy="lazyOnload"
-            type="module"
-            src="js/video-background.js"
-          ></Script>
-          <Script
-            strategy="lazyOnload"
-            type="module"
-            src="https://player.vimeo.com/api/player.js"
-          ></Script>
-          <Script src="js/util.js" defer></Script>
+          <Script src="https://unpkg.com/youtube-background/jquery.youtube-background.min.js"></Script>
+          <Script src="https://player.vimeo.com/api/player.js"></Script>
+          <Script src="js/util.js"></Script>
         </>
       )}
     </html>

@@ -36,7 +36,7 @@ export default function Hero() {
                   MARKETING
                 </li>
                 <li className="rounded-lg px-2 pb-1 pt-2 outline outline-1 outline-semiwhite transition-all duration-300 hover:scale-105 md:px-4">
-                  E-COMMERCE
+                  WEBSITES
                 </li>
               </ul>
             </li>
@@ -57,6 +57,7 @@ export default function Hero() {
               <span className="relative z-10">Ou</span>
             </div>
             <button
+              aria-label="Assista nosso vídeo"
               id="trailer-button-naMB8YJ5yps"
               className="trailer-button group box-border  flex items-center justify-center rounded-lg rounded-r-lg border-2 border-white py-4 text-xs transition-all duration-300  lg:rounded-l-none lg:text-sm"
             >
@@ -75,16 +76,19 @@ export default function Hero() {
                 id="trailer-modal-backdrop"
                 className="modal-backdrop"
               >
-                <button>close</button>
+                <button aria-label="Fechar">close</button>
               </form>
             </dialog>
           </div>
         </div>
       </div>
-      <div className="absolute bottom-0 hidden flex-col items-center font-body md:mb-4 lg:flex">
-        <h4 className="text-sm tracking-wider">
+      <div
+        id="hero-partners"
+        className="absolute bottom-0 hidden flex-col items-center font-body md:mb-4 lg:flex"
+      >
+        <h3 className="text-sm tracking-wider">
           NOSSOS PARCEIROS DE CONFIANÇA
-        </h4>
+        </h3>
         <div className="flex max-w-screen-xl items-center  justify-center gap-x-20 px-5 xl:px-0">
           <Image
             src={BoticarioLogo}

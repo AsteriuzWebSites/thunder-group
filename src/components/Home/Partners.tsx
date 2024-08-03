@@ -10,11 +10,17 @@ import VicLogo from "@/assets/partners/vic.png";
 export default function Partners() {
   return (
     <section>
-      <div className="relative z-10 my-8 flex flex-col flex-wrap items-center font-body lg:hidden">
-        <h4 className="mb-10 text-center text-sm tracking-wider text-[#ffffff]">
+      <div
+        id="partners-partners"
+        className="relative z-10 my-8 flex flex-col flex-wrap items-center font-body lg:hidden"
+      >
+        <h3 className="mb-10 text-center text-sm tracking-wider text-[#ffffff]">
           NOSSOS PARCEIROS DE CONFIANÇA
-        </h4>
-        <div className="grid grid-cols-2 justify-items-center gap-y-12">
+        </h3>
+        <div
+          id="grid-partners"
+          className="grid grid-cols-2 items-center justify-items-center gap-y-12"
+        >
           <Image
             src={BoticarioLogo}
             alt="Boticario"

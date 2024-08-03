@@ -12,6 +12,29 @@
 
 @keyframes pulse-lg {
   50% {
-    opacity: .2;
+    opacity: 0.2;
   }
+}
+
+@property --gradient-angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+@keyframes rotation {
+  0% {
+    --gradient-angle: 0deg;
+  }
+  100% {
+    --gradient-angle: 360deg;
+  }
+}
+
+:root {
+  --clr-1: #8a2387;
+  --clr-2: #e94057;
+  --clr-3: #f27121;
+  --clr-4: #f2a359;
+  --clr-5: #ffec99;
 }

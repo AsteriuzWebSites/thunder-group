@@ -1,0 +1,14 @@
+@media (max-height: 800px) and (min-width: 1024px) {
+  #hero-partners {
+    display: none;
+  }
+
+  #partners-partners {
+    display: flex;
+  }
+
+  #grid-partners {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 96px;
+  }
+}
