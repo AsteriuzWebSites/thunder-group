@@ -32,8 +32,12 @@ const gotham = localFont({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://thndr.com.br"),
   title: "Thndr Group",
   description: "Bem Vindo ao Novo | Estrategista digital",
+  alternates: {
+    canonical: "./",
+  }
 };
 
 export default function RootLayout({
