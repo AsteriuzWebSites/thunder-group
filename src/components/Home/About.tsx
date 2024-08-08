@@ -6,7 +6,7 @@ import {
   IoStatsChartOutline,
   IoVideocamOutline,
 } from "react-icons/io5";
-import HandsImage from "@/assets/about/hands.jpeg";
+import HandsImage from "@/assets/about/hands.webp";
 
 export default function About() {
   return (

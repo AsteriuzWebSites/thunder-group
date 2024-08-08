@@ -1,5 +1,5 @@
 import Image from "next/image";
-import ContactImage from "@/assets/contact/astronaut.png";
+import ContactImage from "@/assets/contact/astronaut.webp";
 
 export default function Contact() {
   return (

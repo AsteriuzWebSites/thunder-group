@@ -1,10 +1,9 @@
 import Image from "next/image";
 import ExploreCard from "./Utils/ExploreCard";
-import TrailerImage from "@/assets/portfolio/trailer.jpg";
-import Daiso1 from "@/assets/portfolio/daiso.jpg";
-import DanielPenim from "@/assets/portfolio/daniel-penin.jpeg";
-import Porsche from "@/assets/portfolio/porsche.jpeg";
-import StudioKolle from "@/assets/portfolio/studio-kolle.png";
+import Daiso1 from "@/assets/portfolio/daiso.webp";
+import DanielPenim from "@/assets/portfolio/daniel-penin.webp";
+import Porsche from "@/assets/portfolio/porsche.webp";
+import StudioKolle from "@/assets/portfolio/studio-kolle.webp";
 
 export default function Explore() {
   return (
@@ -24,7 +23,6 @@ export default function Explore() {
         <div className="flex flex-wrap md:w-1/2">
           <ExploreCard
             title="Daiso Japan"
-            // image="https://images.pexels.com/photos/1402787/pexels-photo-1402787.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
             image={Daiso1}
             size="small"
             vimeoID="993750211"
@@ -51,7 +49,6 @@ export default function Explore() {
           />
           <ExploreCard
             title="Studio Kolles"
-            // image="https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(75).webp"
             image={StudioKolle}
             size="small"
             vimeoID="993770328"

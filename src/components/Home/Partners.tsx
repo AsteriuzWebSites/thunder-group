@@ -1,11 +1,11 @@
 import Image from "next/image";
 import BoticarioLogo from "@/assets/partners/boticario.webp";
-import MelissaLogo from "@/assets/partners/melissa.png";
-import DaisoLogo from "@/assets/partners/daiso.png";
-import PorscheLogo from "@/assets/partners/porsche.png";
-import SKLogo from "@/assets/partners/sk.png";
-import VianaLogo from "@/assets/partners/viana.png";
-import VicLogo from "@/assets/partners/vic.png";
+import MelissaLogo from "@/assets/partners/melissa.webp";
+import DaisoLogo from "@/assets/partners/daiso.webp";
+import PorscheLogo from "@/assets/partners/porsche.webp";
+import SKLogo from "@/assets/partners/sk.webp";
+import VianaLogo from "@/assets/partners/viana.webp";
+import VicLogo from "@/assets/partners/vic.webp";
 
 export default function Partners() {
   return (
