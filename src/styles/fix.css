@@ -12,3 +12,8 @@
     gap: 96px;
   }
 }
+
+/* [data-theme="dark"] .modal-box {
+  width: auto !important;
+  height: calc(100vh - 5rem);
+} */

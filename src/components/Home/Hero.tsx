@@ -17,7 +17,7 @@ export default function Hero() {
       <div className="-mb-10 w-screen max-w-screen-xl px-5 lg:mb-10 xl:px-0">
         <div className="w-full max-w-screen-lg py-4">
           <h2 className="font-heading text-sm font-normal md:text-base">
-            O ESTÚDIO DE EDIÇÃO DE VÍDEO PARA
+            SOMOS ESPECIALISTAS EM
           </h2>
           <ul className="mb-4 mt-2 flex flex-wrap gap-x-5 gap-y-3 font-category text-sm tracking-wide md:my-4 md:text-base">
             <li>
@@ -46,7 +46,7 @@ export default function Hero() {
           </h1>
           <div className="relative mt-3 grid w-4/5 grid-rows-2 gap-y-3 sm:w-3/5 md:mt-8 md:w-1/2 lg:h-3 lg:grid-cols-2 lg:grid-rows-none">
             <a
-              href="https://wa.me/5511966017667"
+              href="https://wa.me/5511969573861"
               target="_blank"
               className="flex items-center justify-center rounded-lg rounded-l-lg bg-roxo py-4 align-middle text-sm transition-colors duration-300 hover:bg-roxo-hover lg:rounded-r-none"
             >

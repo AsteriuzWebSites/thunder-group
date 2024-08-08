@@ -62,13 +62,10 @@ export default function ExploreCard({
             </dialog>
           )) || (
             <dialog id={`trailer-modal-${vimeoID}`} className="modal">
-              <div
-                id="trailer-box"
-                className="modal-box aspect-[9/16] w-3/4 bg-black p-0 md:w-full"
-              >
+              <div id="trailer-box" className="modal-box aspect-[9/16] p-0 sm:h-[calc(100vh-5em)] sm:w-auto w-3/4 h-auto">
                 <iframe
                   id={`iframe-${vimeoID}`}
-                  src={`https://player.vimeo.com/video/${vimeoID}?title=0&byline=0&portrait=0&badge=0&autopause=0&player_id=0&app_id=58479`}
+                  src={`https://player.vimeo.com/video/${vimeoID}?title=0&byline=0&portrait=0&badge=0&autopause=0&player_id=0&app_id=58479?transparent=0`}
                   // width={360}
                   // height={640}
                   // responsive

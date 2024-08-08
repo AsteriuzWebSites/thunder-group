@@ -51,6 +51,14 @@ export default function Header() {
                 </li>
                 <li>
                   <Link
+                    href="#about"
+                    className="drawer-button cursor-pointer px-6 py-3"
+                  >
+                    EMPRESA
+                  </Link>
+                </li>
+                <li>
+                  <Link
                     href="#portfolio"
                     className="drawer-button cursor-pointer px-6 py-3"
                   >
@@ -83,6 +91,14 @@ export default function Header() {
                 className="cursor-pointer rounded-none px-6 py-3 transition-all duration-300 hover:bg-transparent hover:bg-none hover:shadow-roxoUnderline"
               >
                 HOME
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="#about"
+                className="cursor-pointer rounded-none px-6 py-3 transition-all duration-300 hover:bg-transparent  hover:bg-none hover:shadow-roxoUnderline"
+              >
+                EMPRESA
               </Link>
             </li>
             <li>

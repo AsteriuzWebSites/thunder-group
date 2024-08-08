@@ -38,16 +38,16 @@ export default function Footer() {
               activeLink={true}
               links={[
                 {
-                  text: "(11) 2675-2428",
-                  href: "tel:+997434003",
+                  text: "(11) 96957-3861",
+                  href: "tel:+11969573861",
                   renderIcon: (className) => (
                     <IoCallOutline className={className} />
                   ),
                   color: "text-blue-500",
                 },
                 {
-                  text: "(11) 97031-9836",
-                  href: "https://wa.me/5511966017667",
+                  text: "(11) 96957-3861",
+                  href: "https://wa.me/5511969573861",
                   renderIcon: (className) => (
                     <IoLogoWhatsapp className={className} />
                   ),

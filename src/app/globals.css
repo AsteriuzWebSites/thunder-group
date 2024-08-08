@@ -29,3 +29,56 @@ body.scroll-bottom::-webkit-scrollbar-thumb {
 body.scroll-top::-webkit-scrollbar-thumb {
   border-radius: 0 0 10px 10px;
 }
+
+
+.glass-card-roxo {
+  background: rgba(144, 19, 254, 0.2);
+  box-shadow: 0 8px 24px 0 rgba(144, 19, 254, 0.37);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  transition: all 0.3s ease;
+}
+
+.glass-card-roxo:hover {
+  background: rgba(144, 19, 254, 0.4);
+  box-shadow: 0 0px 0px 0 rgba(144, 19, 254, 0.5);
+  transform: scale(1.05);
+}
+
+.glass-card-vermelho {
+  background: rgba(208, 2, 27, 0.2);
+  box-shadow: 0 8px 24px 0 rgba(208, 2, 27, 0.37);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  transition: all 0.3s ease;
+}
+
+.glass-card-vermelho:hover {
+  background: rgba(208, 2, 27, 0.4);
+  box-shadow: 0 0px 0px 0 rgba(208, 2, 27, 0.5);
+  transform: scale(1.05);
+}
+
+.glass-card-verde {
+  background: rgba(0, 255, 0, 0.2);
+  box-shadow: 0 8px 24px 0 rgba(0, 255, 0, 0.37);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  transition: all 0.3s ease;
+}
+
+.glass-card-verde:hover {
+  background: rgba(0, 255, 0, 0.4);
+  box-shadow: 0 0px 0px 0 rgba(0, 255, 0, 0.5);
+  transform: scale(1.05);
+}
+
+.glass-card-azul {
+  background: rgba(74, 144, 226, 0.2);
+  box-shadow: 0 8px 24px 0 rgba(74, 144, 226, 0.37);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  transition: all 0.3s ease;
+}
+
+.glass-card-azul:hover {
+  background: rgba(74, 144, 226, 0.4);
+  box-shadow: 0 0px 0px 0 rgba(74, 144, 226, 0.5);
+  transform: scale(1.05);
+}

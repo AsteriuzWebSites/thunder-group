@@ -3,6 +3,7 @@ import Hero from "@/components/Home/Hero";
 import Partners from "@/components/Home/Partners";
 import Explore from "@/components/Home/Explore";
 import Contact from "@/components/Home/Contact";
+import About from "@/components/Home/About";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <div className="video-background-overlay"></div>
       <Hero />
       <Partners />
+      <About />
       <Explore />
       <Contact />
     </main>

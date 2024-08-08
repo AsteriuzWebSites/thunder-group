@@ -13,7 +13,7 @@ export default function Explore() {
       className="relative flex flex-col items-center justify-center"
     >
       <div className="mt-2 w-screen max-w-screen-xl px-5 py-8 md:mt-0 md:py-20 xl:px-0">
-        <h2 className="mb-4 text-3xl font-bold text-white md:text-4xl">
+        <h2 className="mb-4 text-3xl font-bold text-white md:text-4xl tracking-wider">
           EXPLORE NOSSO TRABALHO
         </h2>
         <h4 className="text-xl tracking-wider text-white">

@@ -8,7 +8,7 @@ export default function Contact() {
       className="relative mb-10 flex flex-col items-center justify-center"
     >
       <div className="-mb-4 mt-8 flex w-screen max-w-screen-xl flex-col items-center justify-center px-5 py-8 md:-mb-0 md:mt-4 md:py-14 xl:px-0">
-        <h2 className="mb-4 text-3xl font-bold text-white md:text-4xl">
+        <h2 className="mb-4 text-3xl font-bold text-white md:text-4xl tracking-wider">
           FALE CONOSCO
         </h2>
         <h3 className="text-center text-xl tracking-wider text-white">

@@ -32,7 +32,7 @@ const gotham = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Thunder Group",
+  title: "Thdr Group",
   description: "Bem Vindo ao Novo | Estrategista digital",
 };
 
@@ -46,6 +46,7 @@ export default function RootLayout({
   return (
     <html lang="pt-br">
       <body
+        data-theme="dark"
         className={`${poppins.variable} ${gotham.variable} ${bebas.variable} vsc-initialized min-h-screen min-w-full bg-black font-body text-white`}
       >
         <Header />

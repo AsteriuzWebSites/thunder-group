@@ -49,6 +49,9 @@ const config: Config = {
         semiblack: {
           DEFAULT: "#222",
         },
+        cinza: {
+          DEFAULT: "#CBCBCD",
+        },
         laranja: {
           DEFAULT: "#d95000",
           hover: "#c04600",
