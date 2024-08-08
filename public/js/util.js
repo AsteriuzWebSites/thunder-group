@@ -9,7 +9,6 @@ let readyStates = {};
 function WaitForVideoBackground() {
   if (typeof VideoBackgrounds !== "undefined") {
     const heroVideo = new VideoBackgrounds("[data-vbg]");
-    console.log(heroVideo.playing);
   } else {
     setTimeout(WaitForVideoBackground, 100);
   }
@@ -28,7 +27,7 @@ function waitForYoutubeApi(videoIds) {
         });
         readyStates[videoId] = true;
       } catch (e) {
-        console.log(e);
+        // console.log(e);
       }
     });
   } else {
@@ -44,7 +43,7 @@ function waitForVimeoApi(videoIds) {
         players[videoId] = new Vimeo.Player(iframe);
         readyStates[videoId] = true;
       } catch (e) {
-        console.log(e);
+        // console.log(e);
       }
     });
   } else {
@@ -73,7 +72,7 @@ youtubeIds.forEach((videoId) => {
         players[videoId].playVideo();
       }
     } catch (e) {
-      console.log(e);
+      // console.log(e);
     }
   });
 
@@ -110,7 +109,7 @@ vimeoIds.forEach((videoId) => {
         players[videoId].play();
       }
     } catch (e) {
-      console.log(e);
+      // console.log(e);
     }
     videoModal.showModal();
   });

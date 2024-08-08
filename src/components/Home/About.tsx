@@ -19,9 +19,9 @@ export default function About() {
           <h2 className="mb-4 text-3xl font-bold tracking-wider text-white md:text-4xl">
             SOBRE NOSSA EMPRESA
           </h2>
-          <h4 className="mb-8 text-xl uppercase tracking-wider text-white">
+          <h3 className="mb-8 text-xl uppercase tracking-wider text-white">
             TRANSFORMANDO IDEIAS EM REALIDADE
-          </h4>
+          </h3>
           <div className="text-cinza flex flex-col gap-2 leading-8 tracking-wide lg:text-lg">
             <p>
               Bem-vindo à Thndr, onde transformamos a visão da sua marca em
@@ -76,9 +76,9 @@ export default function About() {
           <h2 className="mb-4 text-3xl font-bold tracking-wider text-white md:text-4xl">
             NOSSOS SERVIÇOS
           </h2>
-          <h4 className="mb-8 text-xl uppercase leading-relaxed tracking-wider text-white">
+          <h3 className="mb-8 text-xl uppercase leading-relaxed tracking-wider text-white">
             SOLUÇÕES CRIATIVAS PARA IMPULSIONAR SUA MARCA
-          </h4>
+          </h3>
           <div className="text-cinza flex flex-col gap-2 leading-8 tracking-wide lg:text-lg">
             <p>
               Na Thndr, acreditamos que um conteúdo bem elaborado não apenas

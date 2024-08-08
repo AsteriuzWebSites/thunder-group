@@ -16,9 +16,9 @@ export default function Explore() {
         <h2 className="mb-4 text-3xl font-bold text-white md:text-4xl tracking-wider">
           EXPLORE NOSSO TRABALHO
         </h2>
-        <h4 className="text-xl tracking-wider text-white">
+        <h3 className="text-xl tracking-wider text-white">
           APROVADO PELOS LÍDERES DO MERCADO
-        </h4>
+        </h3>
       </div>
       <div className="-mx-2 flex flex-col flex-wrap md:flex-row">
         <div className="flex flex-wrap md:w-1/2">

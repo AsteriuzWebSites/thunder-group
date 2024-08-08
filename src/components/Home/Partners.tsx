@@ -14,9 +14,9 @@ export default function Partners() {
         id="partners-partners"
         className="relative z-10 my-8 flex flex-col flex-wrap items-center font-body lg:hidden"
       >
-        <h3 className="mb-10 text-center text-sm tracking-wider text-[#ffffff]">
+        <h2 className="mb-10 text-center text-sm tracking-wider text-[#ffffff]">
           NOSSOS PARCEIROS DE CONFIANÇA
-        </h3>
+        </h2>
         <div
           id="grid-partners"
           className="grid grid-cols-2 items-center justify-items-center gap-y-12"

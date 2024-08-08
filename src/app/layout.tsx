@@ -32,7 +32,7 @@ const gotham = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Thdr Group",
+  title: "Thndr Group",
   description: "Bem Vindo ao Novo | Estrategista digital",
 };
 
