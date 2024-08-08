@@ -86,44 +86,44 @@ export default function Hero() {
         id="hero-partners"
         className="absolute bottom-0 hidden flex-col items-center font-body md:mb-4 lg:flex"
       >
-        <h3 className="text-sm tracking-wider">
+        <h2 className="text-sm tracking-wider">
           NOSSOS PARCEIROS DE CONFIANÇA
-        </h3>
+        </h2>
         <div className="flex max-w-screen-xl items-center  justify-center gap-x-20 px-5 xl:px-0">
           <Image
             src={BoticarioLogo}
             alt="Boticario"
-            className="w-1/5 min-w-0  py-8 brightness-0 invert transition-transform duration-500 hover:scale-110 tall:w-1/4"
+            className="w-1/4  min-w-0 py-8 brightness-0 invert transition-transform duration-500 hover:scale-110 tall:w-1/4"
           />
           <Image
             src={MelissaLogo}
             alt="Melissa"
-            className="w-1/5 min-w-0 py-8 brightness-0 invert transition-transform duration-500 hover:scale-110 tall:w-1/4"
+            className="w-1/3 min-w-0 py-8 brightness-0 invert transition-transform duration-500 hover:scale-110 tall:w-1/4"
           />
           <Image
             src={DaisoLogo}
             alt="Daiso"
-            className="w-1/5 min-w-0 py-8 brightness-0 invert transition-transform duration-500 hover:scale-110 tall:w-1/4"
+            className="w-1/3 min-w-0 py-8 brightness-0 invert transition-transform duration-500 hover:scale-110 tall:w-1/4"
           />
           <Image
             src={PorscheLogo}
             alt="Porsche"
-            className="w-1/5 min-w-0  py-8 brightness-0 invert transition-transform duration-500 hover:scale-110 tall:w-1/5"
+            className="w-1/5  min-w-0 py-8 brightness-0 invert transition-transform duration-500 hover:scale-110 tall:w-1/5"
           />
           <Image
             src={SKLogo}
             alt="SK"
-            className="w-1/5 min-w-0 py-8 brightness-0 invert transition-transform duration-500 hover:scale-110 tall:w-1/4"
+            className="w-1/3 min-w-0 py-8 brightness-0 invert transition-transform duration-500 hover:scale-110 tall:w-1/4"
           />
           <Image
             src={VianaLogo}
             alt="Viana"
-            className="w-1/5 min-w-0 py-8 brightness-0 invert transition-transform duration-500 hover:scale-110 tall:w-1/4"
+            className="w-1/3 min-w-0 py-8 brightness-0 invert transition-transform duration-500 hover:scale-110 tall:w-1/4"
           />
           <Image
             src={VicLogo}
             alt="Vic"
-            className="w-1/5 min-w-0 py-8 brightness-0 invert transition-transform duration-500 hover:scale-110 tall:w-1/4"
+            className="w-1/3 min-w-0 py-8 brightness-0 invert transition-transform duration-500 hover:scale-110 tall:w-1/4"
           />
         </div>
       </div>

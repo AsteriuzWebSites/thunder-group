@@ -25,6 +25,10 @@ const config: Config = {
     "group-hover:text-purple-500",
     "items-center",
     "text-roxo",
+    "sm:order-3",
+    "sm:order-4",
+    "order-4",
+    "order-3",
   ],
   theme: {
     screens: {

@@ -51,25 +51,29 @@ export default function About() {
             title="Criação de Sites"
             description="Modernos e responsivos, garantem uma presença marcante online."
             icon={<IoDesktopOutline />}
-            color="azul"
+            color="roxo"
+            order="order-1"
           />
           <ServiceCard
             title="Vídeos"
             description="Criativos e envolventes, revelam a essência da sua marca."
             icon={<IoVideocamOutline />}
-            color="vermelho"
+            color="roxo-claro"
+            order="order-2"
           />
           <ServiceCard
             title="Designs"
             description="Inovadores e personalizados, capturam a identidade do seu negócio."
             icon={<IoBrushOutline />}
-            color="roxo"
+            color="roxo-claro"
+            order="order-4 md:order-3"
           />
           <ServiceCard
             title="SEO"
             description="Estratégias de SEO que aumentam sua visibilidade e atraem visitantes."
             icon={<IoStatsChartOutline />}
-            color="verde"
+            color="roxo"
+            order="order-3 md:order-4"
           />
         </div>
         <div className="order-1 lg:order-2">

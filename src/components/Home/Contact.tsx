@@ -8,7 +8,7 @@ export default function Contact() {
       className="relative mb-10 flex flex-col items-center justify-center"
     >
       <div className="-mb-4 mt-8 flex w-screen max-w-screen-xl flex-col items-center justify-center px-5 py-8 md:-mb-0 md:mt-4 md:py-14 xl:px-0">
-        <h2 className="mb-4 text-3xl font-bold text-white md:text-4xl tracking-wider">
+        <h2 className="mb-4 text-3xl font-bold tracking-wider text-white md:text-4xl">
           FALE CONOSCO
         </h2>
         <h3 className="text-center text-xl tracking-wider text-white">
@@ -41,7 +41,7 @@ export default function Contact() {
               id="email"
               type="email"
               placeholder="Email"
-              className="rounded-lg bg-zinc-900 autofill:!bg-zinc-900 p-3 text-white"
+              className="rounded-lg bg-zinc-900 p-3 text-white autofill:!bg-zinc-900"
               required
             />
             <textarea
@@ -52,13 +52,13 @@ export default function Contact() {
             ></textarea>
             <a
               id="mailtoLink"
-              className="flex cursor-pointer items-center justify-center rounded-lg bg-gradient-to-r from-[#763AF5] to-[#A604F2] p-3 text-white"
+              className="flex cursor-pointer items-center justify-center rounded-lg bg-gradient-to-r from-[#763AF5] to-[#A604F2] p-3 text-white "
             >
               Enviar mensagem
             </a>
           </form>
         </div>
-        <div className="order-1 md:order-2">
+        <div className="order-1 md:order-2 shine rounded-lg">
           <Image src={ContactImage} alt="astronaut" className="rounded-lg" />
         </div>
       </div>

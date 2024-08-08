@@ -1,4 +1,4 @@
-@media (max-height: 800px) and (min-width: 1024px) {
+@media (max-height: 700px) and (min-width: 1024px) {
   #hero-partners {
     display: none;
   }
@@ -12,8 +12,3 @@
     gap: 96px;
   }
 }
-
-/* [data-theme="dark"] .modal-box {
-  width: auto !important;
-  height: calc(100vh - 5rem);
-} */

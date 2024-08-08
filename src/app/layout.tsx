@@ -64,7 +64,7 @@ export default function RootLayout({
         <>
           <Script src="js/nav.js"></Script>
           <Script src="https://unpkg.com/youtube-background/jquery.youtube-background.min.js"></Script>
-          <Script src="https://player.vimeo.com/api/player.js"></Script>
+          <Script src="https://player.vimeo.com/api/player.js" async></Script>
           <Script src="js/util.js"></Script>
         </>
       )}
